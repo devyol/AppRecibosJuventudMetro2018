@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="MET01_ENCARGADO" EntityType="Model.Store.MET01_ENCARGADO" store:Type="Tables" Schema="MET01" />
+          <EntitySet Name="MET01_EVENTO" EntityType="Model.Store.MET01_EVENTO" store:Type="Tables" Schema="MET01" />
+          <EntitySet Name="MET01_IGLESIA" EntityType="Model.Store.MET01_IGLESIA" store:Type="Tables" Schema="MET01" />
+          <EntitySet Name="MET01_PASTOR" EntityType="Model.Store.MET01_PASTOR" store:Type="Tables" Schema="MET01" />
+          <EntitySet Name="MET01_REGION" EntityType="Model.Store.MET01_REGION" store:Type="Tables" Schema="MET01" />
+          <AssociationSet Name="FK_ENC" Association="Model.Store.FK_ENC">
+            <End Role="MET01_ENCARGADO" EntitySet="MET01_ENCARGADO" />
+            <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PAS" Association="Model.Store.FK_PAS">
+            <End Role="MET01_PASTOR" EntitySet="MET01_PASTOR" />
+            <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REG" Association="Model.Store.FK_REG">
+            <End Role="MET01_REGION" EntitySet="MET01_REGION" />
+            <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="MET01_ENCARGADO">
+          <Key>
+            <PropertyRef Name="ENCARGADO" />
+          </Key>
+          <Property Name="ENCARGADO" Type="number" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="150" />
+          <Property Name="TELEFONO" Type="varchar2" MaxLength="25" />
+          <Property Name="TALLA" Type="varchar2" MaxLength="10" />
+          <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+          <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_CREACION" Type="date" />
+          <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_MODIFICACION" Type="date" />
+        </EntityType>
+        <EntityType Name="MET01_EVENTO">
+          <Key>
+            <PropertyRef Name="EVENTO" />
+          </Key>
+          <Property Name="EVENTO" Type="number" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="100" />
+          <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+          <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_CREACION" Type="date" />
+          <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_MODIFICACION" Type="date" />
+        </EntityType>
+        <EntityType Name="MET01_IGLESIA">
+          <Key>
+            <PropertyRef Name="IGLESIA" />
+          </Key>
+          <Property Name="IGLESIA" Type="number" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="250" />
+          <Property Name="REGION" Type="number" />
+          <Property Name="ENCARGADO" Type="number" />
+          <Property Name="PASTOR" Type="number" />
+          <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+          <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_CREACION" Type="date" />
+          <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_MODIFICACION" Type="date" />
+        </EntityType>
+        <EntityType Name="MET01_PASTOR">
+          <Key>
+            <PropertyRef Name="PASTOR" />
+          </Key>
+          <Property Name="PASTOR" Type="number" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="150" />
+          <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+          <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_CREACION" Type="date" />
+          <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_MODIFICACION" Type="date" />
+        </EntityType>
+        <EntityType Name="MET01_REGION">
+          <Key>
+            <PropertyRef Name="REGION" />
+          </Key>
+          <Property Name="REGION" Type="number" Nullable="false" />
+          <Property Name="NOMBRE" Type="varchar2" MaxLength="100" />
+          <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+          <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_CREACION" Type="date" />
+          <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+          <Property Name="FECHA_MODIFICACION" Type="date" />
+        </EntityType>
+        <Association Name="FK_ENC">
+          <End Role="MET01_ENCARGADO" Type="Model.Store.MET01_ENCARGADO" Multiplicity="0..1" />
+          <End Role="MET01_IGLESIA" Type="Model.Store.MET01_IGLESIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MET01_ENCARGADO">
+              <PropertyRef Name="ENCARGADO" />
+            </Principal>
+            <Dependent Role="MET01_IGLESIA">
+              <PropertyRef Name="ENCARGADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PAS">
+          <End Role="MET01_PASTOR" Type="Model.Store.MET01_PASTOR" Multiplicity="0..1" />
+          <End Role="MET01_IGLESIA" Type="Model.Store.MET01_IGLESIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MET01_PASTOR">
+              <PropertyRef Name="PASTOR" />
+            </Principal>
+            <Dependent Role="MET01_IGLESIA">
+              <PropertyRef Name="PASTOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REG">
+          <End Role="MET01_REGION" Type="Model.Store.MET01_REGION" Multiplicity="0..1" />
+          <End Role="MET01_IGLESIA" Type="Model.Store.MET01_IGLESIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MET01_REGION">
+              <PropertyRef Name="REGION" />
+            </Principal>
+            <Dependent Role="MET01_IGLESIA">
+              <PropertyRef Name="REGION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="MET01_ENCARGADO" EntityType="Model.MET01_ENCARGADO" />
+          <EntitySet Name="MET01_EVENTO" EntityType="Model.MET01_EVENTO" />
+          <EntitySet Name="MET01_IGLESIA" EntityType="Model.MET01_IGLESIA" />
+          <EntitySet Name="MET01_PASTOR" EntityType="Model.MET01_PASTOR" />
+          <EntitySet Name="MET01_REGION" EntityType="Model.MET01_REGION" />
+          <AssociationSet Name="FK_ENC" Association="Model.FK_ENC">
+            <End Role="MET01_ENCARGADO" EntitySet="MET01_ENCARGADO" />
+            <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PAS" Association="Model.FK_PAS">
+            <End Role="MET01_PASTOR" EntitySet="MET01_PASTOR" />
+            <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_REG" Association="Model.FK_REG">
+            <End Role="MET01_REGION" EntitySet="MET01_REGION" />
+            <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="MET01_ENCARGADO">
+          <Key>
+            <PropertyRef Name="ENCARGADO" />
+          </Key>
+          <Property Name="ENCARGADO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOMBRE" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="TELEFONO" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="TALLA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+          <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="MET01_IGLESIA" Relationship="Model.FK_ENC" FromRole="MET01_ENCARGADO" ToRole="MET01_IGLESIA" />
+        </EntityType>
+        <EntityType Name="MET01_EVENTO">
+          <Key>
+            <PropertyRef Name="EVENTO" />
+          </Key>
+          <Property Name="EVENTO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+          <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="MET01_IGLESIA">
+          <Key>
+            <PropertyRef Name="IGLESIA" />
+          </Key>
+          <Property Name="IGLESIA" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOMBRE" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="REGION" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ENCARGADO" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="PASTOR" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+          <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="MET01_ENCARGADO" Relationship="Model.FK_ENC" FromRole="MET01_IGLESIA" ToRole="MET01_ENCARGADO" />
+          <NavigationProperty Name="MET01_PASTOR" Relationship="Model.FK_PAS" FromRole="MET01_IGLESIA" ToRole="MET01_PASTOR" />
+          <NavigationProperty Name="MET01_REGION" Relationship="Model.FK_REG" FromRole="MET01_IGLESIA" ToRole="MET01_REGION" />
+        </EntityType>
+        <EntityType Name="MET01_PASTOR">
+          <Key>
+            <PropertyRef Name="PASTOR" />
+          </Key>
+          <Property Name="PASTOR" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOMBRE" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+          <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="MET01_IGLESIA" Relationship="Model.FK_PAS" FromRole="MET01_PASTOR" ToRole="MET01_IGLESIA" />
+        </EntityType>
+        <EntityType Name="MET01_REGION">
+          <Key>
+            <PropertyRef Name="REGION" />
+          </Key>
+          <Property Name="REGION" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+          <Property Name="NOMBRE" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+          <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+          <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="MET01_IGLESIA" Relationship="Model.FK_REG" FromRole="MET01_REGION" ToRole="MET01_IGLESIA" />
+        </EntityType>
+        <Association Name="FK_ENC">
+          <End Role="MET01_ENCARGADO" Type="Model.MET01_ENCARGADO" Multiplicity="0..1" />
+          <End Role="MET01_IGLESIA" Type="Model.MET01_IGLESIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MET01_ENCARGADO">
+              <PropertyRef Name="ENCARGADO" />
+            </Principal>
+            <Dependent Role="MET01_IGLESIA">
+              <PropertyRef Name="ENCARGADO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PAS">
+          <End Role="MET01_PASTOR" Type="Model.MET01_PASTOR" Multiplicity="0..1" />
+          <End Role="MET01_IGLESIA" Type="Model.MET01_IGLESIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MET01_PASTOR">
+              <PropertyRef Name="PASTOR" />
+            </Principal>
+            <Dependent Role="MET01_IGLESIA">
+              <PropertyRef Name="PASTOR" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_REG">
+          <End Role="MET01_REGION" Type="Model.MET01_REGION" Multiplicity="0..1" />
+          <End Role="MET01_IGLESIA" Type="Model.MET01_IGLESIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MET01_REGION">
+              <PropertyRef Name="REGION" />
+            </Principal>
+            <Dependent Role="MET01_IGLESIA">
+              <PropertyRef Name="REGION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="MET01_ENCARGADO">
+            <EntityTypeMapping TypeName="Model.MET01_ENCARGADO">
+              <MappingFragment StoreEntitySet="MET01_ENCARGADO">
+                <ScalarProperty Name="ENCARGADO" ColumnName="ENCARGADO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="TELEFONO" ColumnName="TELEFONO" />
+                <ScalarProperty Name="TALLA" ColumnName="TALLA" />
+                <ScalarProperty Name="ESTADO_REGISTRO" ColumnName="ESTADO_REGISTRO" />
+                <ScalarProperty Name="USUARIO_CREACION" ColumnName="USUARIO_CREACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="USUARIO_MODIFICACION" ColumnName="USUARIO_MODIFICACION" />
+                <ScalarProperty Name="FECHA_MODIFICACION" ColumnName="FECHA_MODIFICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MET01_EVENTO">
+            <EntityTypeMapping TypeName="Model.MET01_EVENTO">
+              <MappingFragment StoreEntitySet="MET01_EVENTO">
+                <ScalarProperty Name="EVENTO" ColumnName="EVENTO" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ESTADO_REGISTRO" ColumnName="ESTADO_REGISTRO" />
+                <ScalarProperty Name="USUARIO_CREACION" ColumnName="USUARIO_CREACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="USUARIO_MODIFICACION" ColumnName="USUARIO_MODIFICACION" />
+                <ScalarProperty Name="FECHA_MODIFICACION" ColumnName="FECHA_MODIFICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MET01_IGLESIA">
+            <EntityTypeMapping TypeName="Model.MET01_IGLESIA">
+              <MappingFragment StoreEntitySet="MET01_IGLESIA">
+                <ScalarProperty Name="IGLESIA" ColumnName="IGLESIA" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="REGION" ColumnName="REGION" />
+                <ScalarProperty Name="ENCARGADO" ColumnName="ENCARGADO" />
+                <ScalarProperty Name="PASTOR" ColumnName="PASTOR" />
+                <ScalarProperty Name="ESTADO_REGISTRO" ColumnName="ESTADO_REGISTRO" />
+                <ScalarProperty Name="USUARIO_CREACION" ColumnName="USUARIO_CREACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="USUARIO_MODIFICACION" ColumnName="USUARIO_MODIFICACION" />
+                <ScalarProperty Name="FECHA_MODIFICACION" ColumnName="FECHA_MODIFICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MET01_PASTOR">
+            <EntityTypeMapping TypeName="Model.MET01_PASTOR">
+              <MappingFragment StoreEntitySet="MET01_PASTOR">
+                <ScalarProperty Name="PASTOR" ColumnName="PASTOR" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ESTADO_REGISTRO" ColumnName="ESTADO_REGISTRO" />
+                <ScalarProperty Name="USUARIO_CREACION" ColumnName="USUARIO_CREACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="USUARIO_MODIFICACION" ColumnName="USUARIO_MODIFICACION" />
+                <ScalarProperty Name="FECHA_MODIFICACION" ColumnName="FECHA_MODIFICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MET01_REGION">
+            <EntityTypeMapping TypeName="Model.MET01_REGION">
+              <MappingFragment StoreEntitySet="MET01_REGION">
+                <ScalarProperty Name="REGION" ColumnName="REGION" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="ESTADO_REGISTRO" ColumnName="ESTADO_REGISTRO" />
+                <ScalarProperty Name="USUARIO_CREACION" ColumnName="USUARIO_CREACION" />
+                <ScalarProperty Name="FECHA_CREACION" ColumnName="FECHA_CREACION" />
+                <ScalarProperty Name="USUARIO_MODIFICACION" ColumnName="USUARIO_MODIFICACION" />
+                <ScalarProperty Name="FECHA_MODIFICACION" ColumnName="FECHA_MODIFICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

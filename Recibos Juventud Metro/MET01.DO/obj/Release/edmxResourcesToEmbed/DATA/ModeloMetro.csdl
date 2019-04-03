@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModelMetro" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="EntitiesMetro" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="MET01_ENCARGADO" EntityType="ModelMetro.MET01_ENCARGADO" />
+    <EntitySet Name="MET01_EVENTO" EntityType="ModelMetro.MET01_EVENTO" />
+    <EntitySet Name="MET01_IGLESIA" EntityType="ModelMetro.MET01_IGLESIA" />
+    <EntitySet Name="MET01_PASTOR" EntityType="ModelMetro.MET01_PASTOR" />
+    <EntitySet Name="MET01_RECIBO" EntityType="ModelMetro.MET01_RECIBO" />
+    <EntitySet Name="MET01_REGION" EntityType="ModelMetro.MET01_REGION" />
+    <EntitySet Name="MET01_TIPO_USUARIO" EntityType="ModelMetro.MET01_TIPO_USUARIO" />
+    <EntitySet Name="MET01_USUARIO" EntityType="ModelMetro.MET01_USUARIO" />
+    <AssociationSet Name="FK_ENC" Association="ModelMetro.FK_ENC">
+      <End Role="MET01_ENCARGADO" EntitySet="MET01_ENCARGADO" />
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EVENTO" Association="ModelMetro.FK_EVENTO">
+      <End Role="MET01_EVENTO" EntitySet="MET01_EVENTO" />
+      <End Role="MET01_RECIBO" EntitySet="MET01_RECIBO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IGLESIA" Association="ModelMetro.FK_IGLESIA">
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+      <End Role="MET01_RECIBO" EntitySet="MET01_RECIBO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAS" Association="ModelMetro.FK_PAS">
+      <End Role="MET01_PASTOR" EntitySet="MET01_PASTOR" />
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REG" Association="ModelMetro.FK_REG">
+      <End Role="MET01_REGION" EntitySet="MET01_REGION" />
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TIPUS" Association="ModelMetro.FK_TIPUS">
+      <End Role="MET01_TIPO_USUARIO" EntitySet="MET01_TIPO_USUARIO" />
+      <End Role="MET01_USUARIO" EntitySet="MET01_USUARIO" />
+    </AssociationSet>
+    <EntitySet Name="MET01_RECIBO_OFICINA" EntityType="ModelMetro.MET01_RECIBO_OFICINA" />
+    <AssociationSet Name="FK_REC_EVE" Association="ModelMetro.FK_REC_EVE">
+      <End Role="MET01_EVENTO" EntitySet="MET01_EVENTO" />
+      <End Role="MET01_RECIBO_OFICINA" EntitySet="MET01_RECIBO_OFICINA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REC_IGLE" Association="ModelMetro.FK_REC_IGLE">
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+      <End Role="MET01_RECIBO_OFICINA" EntitySet="MET01_RECIBO_OFICINA" />
+    </AssociationSet>
+    <EntitySet Name="MET01_CORRELATIVO" EntityType="ModelMetro.MET01_CORRELATIVO" />
+  </EntityContainer>
+  <EntityType Name="MET01_ENCARGADO">
+    <Key>
+      <PropertyRef Name="ENCARGADO" />
+    </Key>
+    <Property Name="ENCARGADO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="TELEFONO" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="TALLA" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_IGLESIA" Relationship="ModelMetro.FK_ENC" FromRole="MET01_ENCARGADO" ToRole="MET01_IGLESIA" />
+  </EntityType>
+  <EntityType Name="MET01_EVENTO">
+    <Key>
+      <PropertyRef Name="EVENTO" />
+    </Key>
+    <Property Name="EVENTO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_RECIBO" Relationship="ModelMetro.FK_EVENTO" FromRole="MET01_EVENTO" ToRole="MET01_RECIBO" />
+    <NavigationProperty Name="MET01_RECIBO_OFICINA" Relationship="ModelMetro.FK_REC_EVE" FromRole="MET01_EVENTO" ToRole="MET01_RECIBO_OFICINA" />
+  </EntityType>
+  <EntityType Name="MET01_IGLESIA">
+    <Key>
+      <PropertyRef Name="IGLESIA" />
+    </Key>
+    <Property Name="IGLESIA" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="REGION" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ENCARGADO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PASTOR" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_ENCARGADO" Relationship="ModelMetro.FK_ENC" FromRole="MET01_IGLESIA" ToRole="MET01_ENCARGADO" />
+    <NavigationProperty Name="MET01_RECIBO" Relationship="ModelMetro.FK_IGLESIA" FromRole="MET01_IGLESIA" ToRole="MET01_RECIBO" />
+    <NavigationProperty Name="MET01_PASTOR" Relationship="ModelMetro.FK_PAS" FromRole="MET01_IGLESIA" ToRole="MET01_PASTOR" />
+    <NavigationProperty Name="MET01_REGION" Relationship="ModelMetro.FK_REG" FromRole="MET01_IGLESIA" ToRole="MET01_REGION" />
+    <NavigationProperty Name="MET01_RECIBO_OFICINA" Relationship="ModelMetro.FK_REC_IGLE" FromRole="MET01_IGLESIA" ToRole="MET01_RECIBO_OFICINA" />
+  </EntityType>
+  <EntityType Name="MET01_PASTOR">
+    <Key>
+      <PropertyRef Name="PASTOR" />
+    </Key>
+    <Property Name="PASTOR" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_IGLESIA" Relationship="ModelMetro.FK_PAS" FromRole="MET01_PASTOR" ToRole="MET01_IGLESIA" />
+  </EntityType>
+  <EntityType Name="MET01_RECIBO">
+    <Key>
+      <PropertyRef Name="RECIBO" />
+    </Key>
+    <Property Name="RECIBO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="TOTAL" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TOTAL_LETRAS" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="CONCEPTO" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="EVENTO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IGLESIA" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_EVENTO" Relationship="ModelMetro.FK_EVENTO" FromRole="MET01_RECIBO" ToRole="MET01_EVENTO" />
+    <NavigationProperty Name="MET01_IGLESIA" Relationship="ModelMetro.FK_IGLESIA" FromRole="MET01_RECIBO" ToRole="MET01_IGLESIA" />
+  </EntityType>
+  <EntityType Name="MET01_REGION">
+    <Key>
+      <PropertyRef Name="REGION" />
+    </Key>
+    <Property Name="REGION" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_IGLESIA" Relationship="ModelMetro.FK_REG" FromRole="MET01_REGION" ToRole="MET01_IGLESIA" />
+  </EntityType>
+  <EntityType Name="MET01_TIPO_USUARIO">
+    <Key>
+      <PropertyRef Name="TIPO_USUARIO" />
+    </Key>
+    <Property Name="TIPO_USUARIO" Type="Decimal" Nullable="false" Precision="38" Scale="0" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_USUARIO" Relationship="ModelMetro.FK_TIPUS" FromRole="MET01_TIPO_USUARIO" ToRole="MET01_USUARIO" />
+  </EntityType>
+  <EntityType Name="MET01_USUARIO">
+    <Key>
+      <PropertyRef Name="USUARIO" />
+    </Key>
+    <Property Name="USUARIO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TIPO_USUARIO" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NOMBRE" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="DESCRIPCION" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ESTADO_REGISTRO" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="USUARIO_CREACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_CREACION" Type="DateTime" Precision="0" />
+    <Property Name="USUARIO_MODIFICACION" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FECHA_MODIFICACION" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="MET01_TIPO_USUARIO" Relationship="ModelMetro.FK_TIPUS" FromRole="MET01_USUARIO" ToRole="MET01_TIPO_USUARIO" />
+  </EntityType>
+  <Association Name="FK_ENC">
+    <End Role="MET01_ENCARGADO" Type="ModelMetro.MET01_ENCARGADO" Multiplicity="0..1" />
+    <End Role="MET01_IGLESIA" Type="ModelMetro.MET01_IGLESIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_ENCARGADO">
+        <PropertyRef Name="ENCARGADO" />
+      </Principal>
+      <Dependent Role="MET01_IGLESIA">
+        <PropertyRef Name="ENCARGADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EVENTO">
+    <End Role="MET01_EVENTO" Type="ModelMetro.MET01_EVENTO" Multiplicity="0..1" />
+    <End Role="MET01_RECIBO" Type="ModelMetro.MET01_RECIBO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_EVENTO">
+        <PropertyRef Name="EVENTO" />
+      </Principal>
+      <Dependent Role="MET01_RECIBO">
+        <PropertyRef Name="EVENTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IGLESIA">
+    <End Role="MET01_IGLESIA" Type="ModelMetro.MET01_IGLESIA" Multiplicity="0..1" />
+    <End Role="MET01_RECIBO" Type="ModelMetro.MET01_RECIBO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_IGLESIA">
+        <PropertyRef Name="IGLESIA" />
+      </Principal>
+      <Dependent Role="MET01_RECIBO">
+        <PropertyRef Name="IGLESIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAS">
+    <End Role="MET01_PASTOR" Type="ModelMetro.MET01_PASTOR" Multiplicity="0..1" />
+    <End Role="MET01_IGLESIA" Type="ModelMetro.MET01_IGLESIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_PASTOR">
+        <PropertyRef Name="PASTOR" />
+      </Principal>
+      <Dependent Role="MET01_IGLESIA">
+        <PropertyRef Name="PASTOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REG">
+    <End Role="MET01_REGION" Type="ModelMetro.MET01_REGION" Multiplicity="0..1" />
+    <End Role="MET01_IGLESIA" Type="ModelMetro.MET01_IGLESIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_REGION">
+        <PropertyRef Name="REGION" />
+      </Principal>
+      <Dependent Role="MET01_IGLESIA">
+        <PropertyRef Name="REGION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TIPUS">
+    <End Role="MET01_TIPO_USUARIO" Type="ModelMetro.MET01_TIPO_USUARIO" Multiplicity="0..1" />
+    <End Role="MET01_USUARIO" Type="ModelMetro.MET01_USUARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_TIPO_USUARIO">
+        <PropertyRef Name="TIPO_USUARIO" />
+      </Principal>
+      <Dependent Role="MET01_USUARIO">
+        <PropertyRef Name="TIPO_USUARIO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MET01_RECIBO_OFICINA">
+    <Key>
+      <PropertyRef Name="RECIBO" />
+    </Key>
+    <Property Type="Decimal" Name="RECIBO" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="String" Name="RECIBO_OFICINA" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NOMBRE" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="TOTAL" Precision="38" Scale="0" />
+    <Property Type="String" Name="TOTAL_LETRAS" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CONCEPTO" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="EVENTO" Precision="38" Scale="0" />
+    <Property Type="Decimal" Name="IGLESIA" Precision="38" Scale="0" />
+    <Property Type="String" Name="ESTADO_REGISTRO" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="USUARIO_CREACION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FECHA_CREACION" Precision="0" />
+    <Property Type="String" Name="USUARIO_MODIFICACION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FECHA_MODIFICACION" Precision="0" />
+    <NavigationProperty Name="MET01_EVENTO" Relationship="ModelMetro.FK_REC_EVE" FromRole="MET01_RECIBO_OFICINA" ToRole="MET01_EVENTO" />
+    <NavigationProperty Name="MET01_IGLESIA" Relationship="ModelMetro.FK_REC_IGLE" FromRole="MET01_RECIBO_OFICINA" ToRole="MET01_IGLESIA" />
+  </EntityType>
+  <Association Name="FK_REC_EVE">
+    <End Type="ModelMetro.MET01_EVENTO" Role="MET01_EVENTO" Multiplicity="0..1" />
+    <End Type="ModelMetro.MET01_RECIBO_OFICINA" Role="MET01_RECIBO_OFICINA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_EVENTO">
+        <PropertyRef Name="EVENTO" />
+      </Principal>
+      <Dependent Role="MET01_RECIBO_OFICINA">
+        <PropertyRef Name="EVENTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REC_IGLE">
+    <End Type="ModelMetro.MET01_IGLESIA" Role="MET01_IGLESIA" Multiplicity="0..1" />
+    <End Type="ModelMetro.MET01_RECIBO_OFICINA" Role="MET01_RECIBO_OFICINA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_IGLESIA">
+        <PropertyRef Name="IGLESIA" />
+      </Principal>
+      <Dependent Role="MET01_RECIBO_OFICINA">
+        <PropertyRef Name="IGLESIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MET01_CORRELATIVO">
+    <Key>
+      <PropertyRef Name="CORRELATIVO" />
+    </Key>
+    <Property Type="Decimal" Name="CORRELATIVO" Nullable="false" Precision="38" Scale="0" />
+    <Property Type="Decimal" Name="CORRELATIVO_ACTUAL" Precision="38" Scale="0" />
+    <Property Type="String" Name="DESCRIPCION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ESTADO_REGISTRO" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Type="String" Name="USUARIO_CREACION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FECHA_CREACION" Precision="0" />
+    <Property Type="String" Name="USUARIO_MODIFICACION" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FECHA_MODIFICACION" Precision="0" />
+  </EntityType>
+</Schema>

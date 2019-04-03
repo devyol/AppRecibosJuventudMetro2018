@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Alias="Self" Provider="Oracle.DataAccess.Client" ProviderManifestToken="11.2" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="MET01_ENCARGADO" EntityType="Model.Store.MET01_ENCARGADO" store:Type="Tables" Schema="MET01" />
+    <EntitySet Name="MET01_EVENTO" EntityType="Model.Store.MET01_EVENTO" store:Type="Tables" Schema="MET01" />
+    <EntitySet Name="MET01_IGLESIA" EntityType="Model.Store.MET01_IGLESIA" store:Type="Tables" Schema="MET01" />
+    <EntitySet Name="MET01_PASTOR" EntityType="Model.Store.MET01_PASTOR" store:Type="Tables" Schema="MET01" />
+    <EntitySet Name="MET01_REGION" EntityType="Model.Store.MET01_REGION" store:Type="Tables" Schema="MET01" />
+    <AssociationSet Name="FK_ENC" Association="Model.Store.FK_ENC">
+      <End Role="MET01_ENCARGADO" EntitySet="MET01_ENCARGADO" />
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAS" Association="Model.Store.FK_PAS">
+      <End Role="MET01_PASTOR" EntitySet="MET01_PASTOR" />
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_REG" Association="Model.Store.FK_REG">
+      <End Role="MET01_REGION" EntitySet="MET01_REGION" />
+      <End Role="MET01_IGLESIA" EntitySet="MET01_IGLESIA" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="MET01_ENCARGADO">
+    <Key>
+      <PropertyRef Name="ENCARGADO" />
+    </Key>
+    <Property Name="ENCARGADO" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="150" />
+    <Property Name="TELEFONO" Type="varchar2" MaxLength="25" />
+    <Property Name="TALLA" Type="varchar2" MaxLength="10" />
+    <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+    <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_CREACION" Type="date" />
+    <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_MODIFICACION" Type="date" />
+  </EntityType>
+  <EntityType Name="MET01_EVENTO">
+    <Key>
+      <PropertyRef Name="EVENTO" />
+    </Key>
+    <Property Name="EVENTO" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="100" />
+    <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+    <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_CREACION" Type="date" />
+    <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_MODIFICACION" Type="date" />
+  </EntityType>
+  <EntityType Name="MET01_IGLESIA">
+    <Key>
+      <PropertyRef Name="IGLESIA" />
+    </Key>
+    <Property Name="IGLESIA" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="250" />
+    <Property Name="REGION" Type="number" />
+    <Property Name="ENCARGADO" Type="number" />
+    <Property Name="PASTOR" Type="number" />
+    <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+    <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_CREACION" Type="date" />
+    <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_MODIFICACION" Type="date" />
+  </EntityType>
+  <EntityType Name="MET01_PASTOR">
+    <Key>
+      <PropertyRef Name="PASTOR" />
+    </Key>
+    <Property Name="PASTOR" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="150" />
+    <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+    <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_CREACION" Type="date" />
+    <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_MODIFICACION" Type="date" />
+  </EntityType>
+  <EntityType Name="MET01_REGION">
+    <Key>
+      <PropertyRef Name="REGION" />
+    </Key>
+    <Property Name="REGION" Type="number" Nullable="false" />
+    <Property Name="NOMBRE" Type="varchar2" MaxLength="100" />
+    <Property Name="ESTADO_REGISTRO" Type="char" MaxLength="1" />
+    <Property Name="USUARIO_CREACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_CREACION" Type="date" />
+    <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
+    <Property Name="FECHA_MODIFICACION" Type="date" />
+  </EntityType>
+  <Association Name="FK_ENC">
+    <End Role="MET01_ENCARGADO" Type="Model.Store.MET01_ENCARGADO" Multiplicity="0..1" />
+    <End Role="MET01_IGLESIA" Type="Model.Store.MET01_IGLESIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_ENCARGADO">
+        <PropertyRef Name="ENCARGADO" />
+      </Principal>
+      <Dependent Role="MET01_IGLESIA">
+        <PropertyRef Name="ENCARGADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAS">
+    <End Role="MET01_PASTOR" Type="Model.Store.MET01_PASTOR" Multiplicity="0..1" />
+    <End Role="MET01_IGLESIA" Type="Model.Store.MET01_IGLESIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_PASTOR">
+        <PropertyRef Name="PASTOR" />
+      </Principal>
+      <Dependent Role="MET01_IGLESIA">
+        <PropertyRef Name="PASTOR" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_REG">
+    <End Role="MET01_REGION" Type="Model.Store.MET01_REGION" Multiplicity="0..1" />
+    <End Role="MET01_IGLESIA" Type="Model.Store.MET01_IGLESIA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MET01_REGION">
+        <PropertyRef Name="REGION" />
+      </Principal>
+      <Dependent Role="MET01_IGLESIA">
+        <PropertyRef Name="REGION" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e0e75ca74b574efeaecbef0359ee96ad" Name="Diagrama1">
+        <EntityTypeShape EntityType="ModelMetro.MET01_ENCARGADO" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_EVENTO" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_IGLESIA" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_PASTOR" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_RECIBO" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_REGION" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_TIPO_USUARIO" Width="1.5" PointX="5.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_USUARIO" Width="1.5" PointX="8" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="ModelMetro.FK_ENC" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelMetro.FK_EVENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelMetro.FK_IGLESIA" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelMetro.FK_PAS" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelMetro.FK_REG" ManuallyRouted="false" />
+        <AssociationConnector Association="ModelMetro.FK_TIPUS" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_RECIBO_OFICINA" Width="1.5" PointX="11.189986126120196" PointY="8.972576667076245" />
+        <AssociationConnector Association="ModelMetro.FK_REC_EVE" />
+        <AssociationConnector Association="ModelMetro.FK_REC_IGLE" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_CORRELATIVO" Width="1.5" PointX="7.5554968135224181" PointY="13.836896500474259" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,80 @@
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe.config
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.pdb
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.dll
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.pdb
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmGlobales.resources
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.frmPrincipal.resources
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmRecibo.resources
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Properties.Resources.resources
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csproj.GenerateResource.Cache
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.exe
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.pdb
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmVistaPrevia.resources
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.cache
+C:\Users\Erik\Desktop\APP .net 2012\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.compiled
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe.config
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.exe
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.pdb
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.pdb
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.dll
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.pdb
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmGlobales.resources
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.frmPrincipal.resources
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmRecibo.resources
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmVistaPrevia.resources
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Properties.Resources.resources
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csproj.GenerateResource.Cache
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.cache
+C:\Users\Erik\Documents\FUENTES\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.compiled
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe.config
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.exe
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.pdb
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.pdb
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.dll
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.pdb
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmGlobales.resources
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.frmPrincipal.resources
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmRecibo.resources
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmVistaPrevia.resources
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Properties.Resources.resources
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csproj.GenerateResource.Cache
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.cache
+C:\Users\Erik\Documents\APP SOURCE\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.compiled
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe.config
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.exe
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.pdb
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.exe
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.UI.pdb
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.dll
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.dll
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\MET01.DO.pdb
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Debug\EntityFramework.xml
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmGlobales.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.frmPrincipal.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmRecibo.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmVistaPrevia.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Properties.Resources.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.csproj.GenerateResource.Cache
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.cache
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\RdlCompile.compiled
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmIglesia.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmListadoIglesias.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmEventos.resources
+C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Debug\MET01.UI.Formularios.frmReportes.resources
