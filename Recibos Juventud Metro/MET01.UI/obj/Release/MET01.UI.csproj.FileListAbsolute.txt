@@ -34,3 +34,38 @@ C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\
 C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Release\RdlCompile.compiled
 C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.exe
 C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.pdb
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.exe.config
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.exe
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.pdb
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\EntityFramework.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.DO.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\Oracle.DataAccess.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\System.Transactions.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.DO.pdb
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\EntityFramework.xml
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmEventos.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmGlobales.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmIglesia.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmListadoIglesias.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.frmPrincipal.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmRecibo.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmReportes.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Formularios.frmVistaPrevia.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.Properties.Resources.resources
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.csproj.GenerateResource.Cache
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\RdlCompile.cache
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\RdlCompile.compiled
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.exe
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\obj\Release\MET01.UI.pdb

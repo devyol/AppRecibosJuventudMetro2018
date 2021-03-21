@@ -33,7 +33,8 @@ namespace MET01.DO.DATA
         public DbSet<MET01_REGION> MET01_REGION { get; set; }
         public DbSet<MET01_TIPO_USUARIO> MET01_TIPO_USUARIO { get; set; }
         public DbSet<MET01_USUARIO> MET01_USUARIO { get; set; }
-        public DbSet<MET01_CORRELATIVO> MET01_CORRELATIVO { get; set; }
         public DbSet<MET01_RECIBO_OFICINA> MET01_RECIBO_OFICINA { get; set; }
+        public DbSet<MET01_CORRELATIVO> MET01_CORRELATIVO { get; set; }
+        public DbSet<MET01_ESTADO> MET01_ESTADO { get; set; }
     }
 }

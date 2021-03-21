@@ -23,6 +23,7 @@
         <AssociationConnector Association="ModelMetro.FK_REC_EVE" />
         <AssociationConnector Association="ModelMetro.FK_REC_IGLE" />
         <EntityTypeShape EntityType="ModelMetro.MET01_CORRELATIVO" Width="1.5" PointX="7.5554968135224181" PointY="13.836896500474259" />
+        <EntityTypeShape EntityType="ModelMetro.MET01_ESTADO" Width="1.5" PointX="2.9403248405737452" PointY="8.93138029097178" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -5,3 +5,11 @@ C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.DO\bin\
 C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.DO\bin\Release\EntityFramework.xml
 C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.DO\obj\Release\MET01.DO.dll
 C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.DO\obj\Release\MET01.DO.pdb
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\bin\Release\MET01.DO.dll.config
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\bin\Release\MET01.DO.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\bin\Release\MET01.DO.pdb
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\bin\Release\EntityFramework.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\bin\Release\EntityFramework.xml
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\obj\Release\MET01.DO.csprojResolveAssemblyReference.cache
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\obj\Release\MET01.DO.dll
+C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.DO\obj\Release\MET01.DO.pdb

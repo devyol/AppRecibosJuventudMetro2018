@@ -12,15 +12,9 @@ namespace MET01.DO.DATA
     using System;
     using System.Collections.Generic;
     
-    public partial class MET01_CORRELATIVO
+    public partial class MET01_ESTADO
     {
-        public decimal CORRELATIVO { get; set; }
-        public Nullable<decimal> CORRELATIVO_ACTUAL { get; set; }
+        public string ESTADO { get; set; }
         public string DESCRIPCION { get; set; }
-        public string ESTADO_REGISTRO { get; set; }
-        public string USUARIO_CREACION { get; set; }
-        public Nullable<System.DateTime> FECHA_CREACION { get; set; }
-        public string USUARIO_MODIFICACION { get; set; }
-        public Nullable<System.DateTime> FECHA_MODIFICACION { get; set; }
     }
 }

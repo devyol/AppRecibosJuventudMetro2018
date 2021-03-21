@@ -152,5 +152,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="MET01_ESTADO">
+      <EntityTypeMapping TypeName="ModelMetro.MET01_ESTADO">
+        <MappingFragment StoreEntitySet="MET01_ESTADO">
+          <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+          <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

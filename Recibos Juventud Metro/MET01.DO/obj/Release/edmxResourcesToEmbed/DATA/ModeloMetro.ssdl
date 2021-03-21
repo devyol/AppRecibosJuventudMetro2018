@@ -3,6 +3,7 @@
   <EntityContainer Name="ModelMetroStoreContainer">
     <EntitySet Name="MET01_CORRELATIVO" EntityType="ModelMetro.Store.MET01_CORRELATIVO" store:Type="Tables" Schema="MET01" />
     <EntitySet Name="MET01_ENCARGADO" EntityType="ModelMetro.Store.MET01_ENCARGADO" store:Type="Tables" Schema="MET01" />
+    <EntitySet Name="MET01_ESTADO" EntityType="ModelMetro.Store.MET01_ESTADO" store:Type="Tables" Schema="MET01" />
     <EntitySet Name="MET01_EVENTO" EntityType="ModelMetro.Store.MET01_EVENTO" store:Type="Tables" Schema="MET01" />
     <EntitySet Name="MET01_IGLESIA" EntityType="ModelMetro.Store.MET01_IGLESIA" store:Type="Tables" Schema="MET01" />
     <EntitySet Name="MET01_PASTOR" EntityType="ModelMetro.Store.MET01_PASTOR" store:Type="Tables" Schema="MET01" />
@@ -70,6 +71,13 @@
     <Property Name="FECHA_CREACION" Type="date" />
     <Property Name="USUARIO_MODIFICACION" Type="varchar2" MaxLength="50" />
     <Property Name="FECHA_MODIFICACION" Type="date" />
+  </EntityType>
+  <EntityType Name="MET01_ESTADO">
+    <Key>
+      <PropertyRef Name="ESTADO" />
+    </Key>
+    <Property Name="ESTADO" Type="varchar2" Nullable="false" MaxLength="1" />
+    <Property Name="DESCRIPCION" Type="varchar2" MaxLength="25" />
   </EntityType>
   <EntityType Name="MET01_EVENTO">
     <Key>

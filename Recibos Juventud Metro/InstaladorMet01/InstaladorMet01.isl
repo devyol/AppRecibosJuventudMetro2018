@@ -225,6 +225,7 @@
 	<table name="AppSearch">
 		<col key="yes" def="s72">Property</col>
 		<col key="yes" def="s72">Signature_</col>
+		<row><td>DOTNETVERSION35</td><td>DotNet35</td></row>
 		<row><td>DOTNETVERSION45FULL</td><td>DotNet45Full</td></row>
 	</table>
 
@@ -340,13 +341,11 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>EntityFramework.dll</td><td>{46E1F55A-1E51-412B-A506-606051607AE7}</td><td>INSTALLDIR</td><td>2</td><td/><td>entityframework.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{DA52B14F-F9BB-4344-B8AF-97B5E5D2B7A3}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>MET01.DO.dll</td><td>{701B88E4-5204-4B68-BEC9-92911BDE2D77}</td><td>INSTALLDIR</td><td>2</td><td/><td>met01.do.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>MET01.UI.exe</td><td>{7778F970-FFE4-4863-8ED0-366055352803}</td><td>INSTALLDIR</td><td>2</td><td/><td>met01.ui.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Microsoft.ReportViewer.WinForms.dll</td><td>{D090060F-E1FD-4363-B6B7-0AB46AE8FB8C}</td><td>INSTALLDIR</td><td>2</td><td/><td>microsoft.reportviewer.winfo</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Oracle.DataAccess.dll</td><td>{1FE28089-08D0-4081-AA56-546DBD31ED48}</td><td>INSTALLDIR</td><td>2</td><td/><td>oracle.dataaccess.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>System.Transactions.dll</td><td>{75B0EB1A-93E2-4E8A-B252-E892115611D4}</td><td>INSTALLDIR</td><td>2</td><td/><td>system.transactions.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{F1435706-5D24-4907-984F-3FA4E62D1DD2}</td><td>REPORTES</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{5AB2C06C-DFDE-49F4-A579-1D555304A4AA}</td><td>REPORTES</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>MET01.DO.dll</td><td>{B4189178-1CDE-4143-BBB8-CD26BDD250A9}</td><td>INSTALLDIR</td><td>2</td><td/><td>met01.do.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>MET01.UI.exe</td><td>{BDAB159B-1AE9-4C71-B7B0-8CB56712F406}</td><td>INSTALLDIR</td><td>2</td><td/><td>met01.ui.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1055,13 +1054,13 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>INSTALLDIR</td><td>EntityFramework.dll</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>INSTALLDIR</td><td>MET01.DO.dll</td></row>
 		<row><td>INSTALLDIR</td><td>MET01.UI.exe</td></row>
-		<row><td>INSTALLDIR</td><td>Microsoft.ReportViewer.WinForms.dll</td></row>
-		<row><td>INSTALLDIR</td><td>Oracle.DataAccess.dll</td></row>
-		<row><td>INSTALLDIR</td><td>System.Transactions.dll</td></row>
+		<row><td>REPORTES</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>REPORTES</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1160,6 +1159,7 @@
 		<row><td>MY_PRODUCT_NAME</td><td>RECIBOS_SANTIAGO_ATITLAN</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MY_PRODUCT_NAME1</td><td>RECIBOS_JUVENTUD_METROPOLITANA</td><td>MYPROD~1|My Product Name</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
+		<row><td>NEW_FOLDER_1</td><td>TARGETDIR</td><td>NEW_FOLDER_1</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
@@ -1170,6 +1170,7 @@
 		<row><td>RECIBOS_JUVENTUD_METROPOLITANA</td><td>ProgramFilesFolder</td><td>RECIBO~1|Recibos Juventud Metropolitana</td><td/><td>0</td><td/></row>
 		<row><td>RECIBOS_METRO</td><td>RECIBOS_JUVENTUD_METROPOLITANA</td><td>RECIBO~1|Recibos Metro</td><td/><td>0</td><td/></row>
 		<row><td>RECIBOS_SANTIAGO_ATITLAN</td><td>ProgramFilesFolder</td><td>RECIBO~1|Recibos Santiago Atitlan</td><td/><td>0</td><td/></row>
+		<row><td>REPORTES</td><td>INSTALLDIR</td><td>Reportes</td><td/><td>0</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
 		<row><td>SendToFolder</td><td>TARGETDIR</td><td>.:SendTo</td><td/><td>3</td><td/></row>
 		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
@@ -1876,13 +1877,11 @@
 	<table name="FeatureComponents">
 		<col key="yes" def="s38">Feature_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>AlwaysInstall</td><td>EntityFramework.dll</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>AlwaysInstall</td><td>MET01.DO.dll</td></row>
 		<row><td>AlwaysInstall</td><td>MET01.UI.exe</td></row>
-		<row><td>AlwaysInstall</td><td>Microsoft.ReportViewer.WinForms.dll</td></row>
-		<row><td>AlwaysInstall</td><td>Oracle.DataAccess.dll</td></row>
-		<row><td>AlwaysInstall</td><td>System.Transactions.dll</td></row>
 	</table>
 
 	<table name="File">
@@ -1897,15 +1896,11 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>entityframework.dll</td><td>EntityFramework.dll</td><td>ENTITY~1.DLL|EntityFramework.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\EntityFramework.dll</td><td>1</td><td/></row>
-		<row><td>met01.do.dll</td><td>MET01.DO.dll</td><td>MET01D~1.DLL|MET01.DO.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.DO.dll</td><td>1</td><td/></row>
-		<row><td>met01.ui.exe</td><td>MET01.UI.exe</td><td>MET01U~1.EXE|MET01.UI.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.exe</td><td>1</td><td/></row>
-		<row><td>met01.ui.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>MET01U~1.CON|MET01.UI.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.exe.config</td><td>1</td><td/></row>
-		<row><td>microsoft.reportviewer.winfo</td><td>Microsoft.ReportViewer.WinForms.dll</td><td>MICROS~1.DLL|Microsoft.ReportViewer.WinForms.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\Microsoft.ReportViewer.WinForms.dll</td><td>1</td><td/></row>
-		<row><td>oracle.dataaccess.dll</td><td>Oracle.DataAccess.dll</td><td>ORACLE~1.DLL|Oracle.DataAccess.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\Oracle.DataAccess.dll</td><td>1</td><td/></row>
-		<row><td>rptimpresionrecibo.rdlc</td><td>ISX_DEFAULTCOMPONENT</td><td>RPTIMP~1.RDL|RptImpresionRecibo.rdlc</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\Reportes\RptImpresionRecibo.rdlc</td><td>1</td><td/></row>
-		<row><td>rptreportegeneral.rdlc</td><td>ISX_DEFAULTCOMPONENT</td><td>RPTREP~1.RDL|RptReporteGeneral.rdlc</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\Reportes\RptReporteGeneral.rdlc</td><td>1</td><td/></row>
-		<row><td>system.transactions.dll</td><td>System.Transactions.dll</td><td>SYSTEM~1.DLL|System.Transactions.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\APP SOURCE\BK MET01\Recibos Juventud Metro\MET01.UI\bin\Release\System.Transactions.dll</td><td>1</td><td/></row>
+		<row><td>met01.do.dll</td><td>MET01.DO.dll</td><td>MET01D~1.DLL|MET01.DO.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.DO.dll</td><td>1</td><td/></row>
+		<row><td>met01.ui.exe</td><td>MET01.UI.exe</td><td>MET01U~1.EXE|MET01.UI.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.exe</td><td>1</td><td/></row>
+		<row><td>met01.ui.exe.config</td><td>ISX_DEFAULTCOMPONENT</td><td>MET01U~1.CON|MET01.UI.exe.config</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\bin\Release\MET01.UI.exe.config</td><td>1</td><td/></row>
+		<row><td>rptimpresionrecibo.rdlc</td><td>ISX_DEFAULTCOMPONENT2</td><td>RPTIMP~1.RDL|RptImpresionRecibo.rdlc</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\Reportes\RptImpresionRecibo.rdlc</td><td>1</td><td/></row>
+		<row><td>rptreportegeneral.rdlc</td><td>ISX_DEFAULTCOMPONENT2</td><td>RPTREP~1.RDL|RptReporteGeneral.rdlc</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\Erik\Documents\Source\metro\AppRecibosJuventudMetro2018\Recibos Juventud Metro\MET01.UI\Reportes\RptReporteGeneral.rdlc</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2048,13 +2043,11 @@
 		<col def="S0">FTPLocation</col>
 		<col def="S0">HTTPLocation</col>
 		<col def="S0">Miscellaneous</col>
-		<row><td>EntityFramework.dll</td><td/><td/><td>_CD00AE44_9F53_440B_8F33_5F302D4CE06F_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_28C7D5B1_E7AD_4B7F_B755_3988B0F50687_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>MET01.DO.dll</td><td/><td/><td>_F3C97E43_4991_4643_9F60_17045F059467_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>MET01.UI.exe</td><td/><td/><td>_89F04D43_C425_495C_A139_E3EFB50AF4E5_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Microsoft.ReportViewer.WinForms.dll</td><td/><td/><td>_854FCC23_25A2_479D_9219_086EBFB582F6_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Oracle.DataAccess.dll</td><td/><td/><td>_335719DC_45D3_4067_A4D5_950D93E1D89D_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>System.Transactions.dll</td><td/><td/><td>_4349F4F0_9616_49E4_921C_816D07D6ED06_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_931E92B7_CCE2_45C2_B94C_CBA345553E45_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_E73ADFBC_EDA5_4842_8EAD_1BCC9D65012B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>MET01.DO.dll</td><td/><td/><td>_E738B03C_BC90_45EF_ABE8_3D5A89827C0A_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>MET01.UI.exe</td><td/><td/><td>_E8034838_D8E7_452C_9D5F_D61F10FFCE82_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2642,9 +2635,10 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Recibos Juventud Metropolitana</td><td>0</td><td/><td>-47798548</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Recibos Juventud Metropolitana</td><td>0</td><td/><td>-1448506046</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-47827252</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1033</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1448530590</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-47835123</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-47827252</td></row>
@@ -3456,6 +3450,7 @@
 		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1033</td><td>This setup works until %s. The setup will now exit.</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>Recibos Metro.exe</td><td>0</td><td/><td>-47820659</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>LAUNCH~1.EXE|Launch MET01.UI.exe</td><td>0</td><td/><td>-1448524094</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>-47827252</td></row>
@@ -3744,9 +3739,10 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-47827252</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-47827252</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.RecibosJuventudMetropolitana.com</td><td>0</td><td/><td>-47796500</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>Recibos Juventud Metropolitana</td><td>0</td><td/><td>-47798548</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>http://www.RecibosJuventudMetropolitana.com</td><td>0</td><td/><td>-1448506046</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>Recibos Juventud Metropolitana</td><td>0</td><td/><td>-1448506046</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>LAUNCH~1.EXE|Launch MET01.UI.exe</td><td>0</td><td/><td>-47783827</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>LAUNCH~1.EXE|Launch MET01.UI.exe</td><td>0</td><td/><td>-1448519838</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-47827252</td></row>
 	</table>
 
@@ -3862,6 +3858,8 @@
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Recibo.ico</td><td>0</td></row>
 		<row><td>MET01.UI.exe1_3B9C4FE1E8FB4D299DF74C731F3A0BC2.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Recibo.ico</td><td>0</td></row>
+		<row><td>MET01.UI.exe1_701279F7C11C4B358DE70235061A8E58.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>MET01.UI.exe_3374BE1A70A647238F4128B4E5EDC390.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>MET01.UI.exe_F957BCBC174C40C685A0D7B1565007AB.exe</td><td/><td>&lt;VSSolutionFolder&gt;\Recibo.ico</td><td>0</td></row>
 	</table>
 
@@ -3995,7 +3993,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{D8AA9E58-D7FA-4C1B-924D-3C3C281122F0}</td></row>
 		<row><td>ISUSSignature</td><td>{E2BBD628-F200-48CD-B9D3-ABCC81888C63}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4053,6 +4051,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 	<table name="LaunchCondition">
 		<col key="yes" def="s255">Condition</col>
 		<col def="l255">Description</col>
+		<row><td>DOTNETVERSION35&lt;&gt;""</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35##</td></row>
 		<row><td>DOTNETVERSION45FULL&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL##</td></row>
 	</table>
 
@@ -4382,7 +4381,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>RestartManagerOption</td><td>CloseRestart</td><td/></row>
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
-		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL</td><td/></row>
+		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL;DOTNETVERSION35</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
 		<row><td>UpgradeCode</td><td>{AEE881E0-96D4-491B-A3EE-0E3884B62517}</td><td/></row>
@@ -4427,6 +4426,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s255">Key</col>
 		<col def="S255">Name</col>
 		<col def="I2">Type</col>
+		<row><td>DotNet35</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Version</td><td>2</td></row>
 		<row><td>DotNet45Full</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Version</td><td>2</td></row>
 	</table>
 
@@ -4446,8 +4446,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>FileKey1</td><td>MET01.UI.exe</td><td/><td>recibo_1_recibos_juventud_metropolitana</td><td>2</td></row>
-		<row><td>FileKey2</td><td>MET01.UI.exe</td><td/><td>recibo_1_recibos_metro</td><td>2</td></row>
 		<row><td>MET01.UI.exe</td><td>MET01.UI.exe</td><td/><td>recibo_1_recibos_metro</td><td>2</td></row>
 	</table>
 
@@ -4534,8 +4532,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>MET01.UI.exe</td><td>recibo_1_recibos_metro</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>MET01.UI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>MET01.UI.exe_F957BCBC174C40C685A0D7B1565007AB.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>MET01.UI.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME1##</td><td>MET01.UI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>MET01.UI.exe1_3B9C4FE1E8FB4D299DF74C731F3A0BC2.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>MET01.UI.exe</td><td>recibo_1_recibos_metro</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>MET01.UI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>MET01.UI.exe_3374BE1A70A647238F4128B4E5EDC390.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>MET01.UI.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>MET01.UI.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>MET01.UI.exe1_701279F7C11C4B358DE70235061A8E58.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

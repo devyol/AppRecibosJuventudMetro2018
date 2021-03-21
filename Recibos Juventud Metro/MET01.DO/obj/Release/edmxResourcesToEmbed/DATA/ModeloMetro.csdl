@@ -43,6 +43,7 @@
       <End Role="MET01_RECIBO_OFICINA" EntitySet="MET01_RECIBO_OFICINA" />
     </AssociationSet>
     <EntitySet Name="MET01_CORRELATIVO" EntityType="ModelMetro.MET01_CORRELATIVO" />
+    <EntitySet Name="MET01_ESTADO" EntityType="ModelMetro.MET01_ESTADO" />
   </EntityContainer>
   <EntityType Name="MET01_ENCARGADO">
     <Key>
@@ -296,5 +297,12 @@
     <Property Type="DateTime" Name="FECHA_CREACION" Precision="0" />
     <Property Type="String" Name="USUARIO_MODIFICACION" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Type="DateTime" Name="FECHA_MODIFICACION" Precision="0" />
+  </EntityType>
+  <EntityType Name="MET01_ESTADO">
+    <Key>
+      <PropertyRef Name="ESTADO" />
+    </Key>
+    <Property Type="String" Name="ESTADO" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DESCRIPCION" MaxLength="25" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

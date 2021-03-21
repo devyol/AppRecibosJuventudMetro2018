@@ -52,6 +52,9 @@
     <Compile Include="DATA\MET01_ENCARGADO.cs">
       <DependentUpon>ModeloMetro.tt</DependentUpon>
     </Compile>
+    <Compile Include="DATA\MET01_ESTADO.cs">
+      <DependentUpon>ModeloMetro.tt</DependentUpon>
+    </Compile>
     <Compile Include="DATA\MET01_EVENTO.cs">
       <DependentUpon>ModeloMetro.tt</DependentUpon>
     </Compile>

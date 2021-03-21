@@ -31,5 +31,13 @@ namespace MET01.UI
         {
             this.Close();
         }
+
+        private void crearEventoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmEventos ev = new frmEventos();
+            ev.ShowDialog();
+            this.Close();
+        }
     }
 }
